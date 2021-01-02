@@ -17,7 +17,7 @@ else
 fi
 
 # Outputs the input text in a nice OSD with Dunst.
-dunstify "Text recieved from input. Without spaces, it is the following:" \
+dunstify "Text recieved from input:" \
 $'\n'"$preparedsource" -a "DeepL script - JP to EN" -u 0
 
 # Here is where the magic with DeepL happens. We get the JSON response from
