@@ -41,7 +41,8 @@ All of these should be in your package manager.
 Coming soon!
 
 ## TODO
-- [ ] Better error handling.
 - [ ] Find a way to remove the quotes around the translated text.
-- [ ] Allow the languages to be (optionally) selected using arguments.
+- [ ] Do more testing around multi-line text input.
 - [ ] Get rid of the reliance on Dunst.
+- [ ] Better error handling.
+- [ ] Allow the languages to be (optionally) selected using arguments.
