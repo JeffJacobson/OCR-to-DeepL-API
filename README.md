@@ -30,10 +30,10 @@ Response from DeepL: {"translations":[{"detected_source_language":"JA","text":"T
 
 ### Dependencies
 This script relies on a few programs to work, which are the following:
-*   `Bash`
+*   Bash
 *   GNU Coreutils for `tr`
-*   `curl`
-*   `dunst` and `dunstify` for notification support. I'm looking into `notify-send`
+*   curl
+*   Dunst and Dunstify for notification support. I'm looking into `notify-send`
 
 All of these should be in your package manager.
 
