@@ -1,4 +1,4 @@
-# OCR to DeepL API
+# OCR to DeepL API scripts
 This is a Work In Progress collection of scripts used to link [dpScreenOCR](https://danpla.github.io/dpscreenocr/) and [DeepL](https://www.deepl.com/home) together.
 
 I chucked this together to help me with translating Japanese text with dpScreenOCR's selection functionality, but by changing the variables contained within the script, you can change what languages are used.
