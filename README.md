@@ -21,7 +21,7 @@ Alternatively, if you want to use the script from the terminal, you can instead 
 `./DeepL_JPtoEN.sh "テレポート"`    
 This will give you the following output:
 ```
-Recieved from input: テ レ ポ ー ト
+Recieved from input: テレポート
 Without spaces: テレポート
 Response from DeepL: {"translations":[{"detected_source_language":"JA","text":"Teleport"}]}
 "Teleport"
