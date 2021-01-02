@@ -45,4 +45,5 @@ Coming soon!
 - [ ] Do more testing around multi-line text input.
 - [ ] Get rid of the reliance on Dunst.
 - [ ] Better error handling.
+- [ ] Implement https://www.deepl.com/docs-api/translating-text/large-volumes/
 - [ ] Allow the languages to be (optionally) selected using arguments.
