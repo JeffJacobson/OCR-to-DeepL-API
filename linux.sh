@@ -11,14 +11,14 @@ sourcelang=JA
 echo "Recieved from input: $1" # Show input text in console. Quotes work here.
 if [ $sourcelang == "JA" ]; then # If the source language is Japanese...
     preparedsource=$(echo $1 | tr -d ' ') # ...remove spaces so DeepL doesn't die.
-    echo "Without spaces: $spaceless" # Show the input text without spaces.
+    echo "Without spaces: $preparedsource" # Show the input text without spaces.
 else
     preparedsource=$1 # Keep the input text as-is
 fi
 
 # Outputs the input text in a nice OSD with Dunst.
 dunstify "Text recieved from input. Without spaces, it is the following:" \
-$'\n'"$spaceless" -a "DeepL script - JP to EN" -u 0
+$'\n'"$preparedsource" -a "DeepL script - JP to EN" -u 0
 
 # Here is where the magic with DeepL happens. We get the JSON response from
 # this and put it into translatedraw.
