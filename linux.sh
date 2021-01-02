@@ -22,7 +22,7 @@ $'\n'"$spaceless" -a "DeepL script - JP to EN" -u 0
 
 # Here is where the magic with DeepL happens. We get the JSON response from
 # this and put it into translatedraw.
-translatedraw=$(curl -G "https://api.deepl.com/v2/translate?auth_key=$apikey" \
+translatedraw=$(curl -Gs "https://api.deepl.com/v2/translate?auth_key=$apikey" \
 --data-urlencode "text=$preparedsource" \
 -d "target_lang=$targetlang&source_lang=$sourcelang")
 
