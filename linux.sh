@@ -31,7 +31,8 @@ if [ $? -eq 0 ]; then # If the curl above was sucessful
     # Get the translated text from the JSON response.
     translated=$(echo $translatedraw | jq -c '.translations[0].text')
     echo "$translated"
-    dunstify "Sucessfully translated:"$'\n'"$translated" -a "DeepL script - $sourcelang to $targetlang"
+    dunstify "Sucessfully translated:" \
+    $'\n'"$translated" -a "DeepL script - $sourcelang to $targetlang"
     exit 0
 else # If the curl above was NOT sucessful
     echo "The request failed!"
