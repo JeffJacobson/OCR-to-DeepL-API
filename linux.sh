@@ -5,8 +5,8 @@
 
 apikey=77b8102f-d342-f26f-2fac-6daadae08d25 # Put your API key here! This is an example!
 # Look at https://www.deepl.com/docs-api/translating-text/request/ for supported languages
-targetlang=EN
 sourcelang=JA
+targetlang=EN
 
 echo "Recieved from input: $1" # Show input text in console. Quotes work here.
 if [ $sourcelang == "JA" ]; then # If the source language is Japanese...
