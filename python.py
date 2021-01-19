@@ -8,9 +8,9 @@ apikey='77b8102f-d342-f26f-2fac-6daadae08d25' # Put your API key here! This is a
 # Look at https://www.deepl.com/docs-api/translating-text/request/ for supported languages
 sourcelang='JA'
 targetlang='EN'
-notification = Notify()
-notification.title = ("DeepL script - "+sourcelang+" - "+targetlang)
-    
+notification=Notify()
+notification.application_name=("DeepL script - "+sourcelang+" - "+targetlang)
+
 parser = argparse.ArgumentParser("command")
 parser.add_argument("input_string", help="The string that you would like to be translated", type=str)
 args = parser.parse_args()
@@ -25,10 +25,12 @@ rawresponse = requests.post(url)
 print(rawresponse)
 if rawresponse.status_code == 200:
     print("Translation: "+rawresponse.json()['translations'][0]['text'])
-    notification.message = ("Sucessfully translated.\nSource: "+preparedsource+"\nTranslation: "+rawresponse.json()['translations'][0]['text'])
+    notification.title = "Sucessfully translated"
+    notification.message = ("Source: "+preparedsource+"\nTranslation: "+rawresponse.json()['translations'][0]['text'])
     notification.send()
     exit
 else:
-    notification.message = ("The translation failed!\nSource: "+preparedsource+"\nError code: "+str(rawresponse.status_code))
+    notification.title = "The translation failed!"
+    notification.message = ("Source: "+preparedsource+"\nError code: "+str(rawresponse.status_code))
     notification.send()
     exit
