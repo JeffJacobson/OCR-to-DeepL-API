@@ -67,7 +67,7 @@ Install the following using `pip3 install namehere`:
 
 ## Windows - Powershell
 
-The `powershell.ps1` script works in giving you a translation and notification, but I can't get it working with dpScreenOCR. If you can get it working, you won't need Python installed.
+The `ms-powershell.ps1` script works in giving you a translation and notification, but I can't get it working with dpScreenOCR. If you can get it working, you won't need Python installed.
 
 ## TODO
 - [ ] Find a way to remove the quotes around the translated text in bash script.
